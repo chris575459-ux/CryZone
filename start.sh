@@ -1,19 +1,7 @@
 #!/bin/bash
-# ---------------------------------------
-# start.sh — Script de arranque SA-MP
-# Carpeta original del usuario: CryZone
-# ---------------------------------------
 
-echo "Iniciando servidor SA-MP..."
+echo "==== Iniciando CryZone SA-MP Server ===="
 
-# Dar permisos de ejecución al servidor
-chmod +x /samp/samp03svr
+chmod +x samp03svr
 
-# Dar permisos a los plugins
-chmod -R +x /samp/plugins
-
-# Entrar a la carpeta donde Docker guarda CryZone
-cd /samp
-
-# Iniciar el servidor SA-MP
 ./samp03svr
